@@ -19,10 +19,6 @@ def start(message):
                                          f" различную информацию")
     dnsbot.send_message(message.chat.id, "Команда /help расскажет тебе о моём функционале.")
 
-@dnsbot.message_handler(commands=["probki"])
-def probk(message):
-    dnsbot.send_message(message.chat.id, parser.probki())
-
 @dnsbot.message_handler(commands=["help"])
 def help(message):
     dnsbot.send_message(message.chat.id, "Список моих возможностей...")
